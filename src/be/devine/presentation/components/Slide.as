@@ -23,6 +23,10 @@ public class Slide extends starling.display.Sprite
 
     public function Slide(slideVO:XML, image:flash.display.Bitmap = null)
     {
+        var sp:rectBox = new rectBox();
+        addChild(sp);
+        sp.x = -2;
+        sp.y = -2;
         this._id = slideVO.id;
 
         if(image != null)
@@ -39,8 +43,7 @@ public class Slide extends starling.display.Sprite
         {
             createList(slideVO.list);
         }
-        var sp:rectBox = new rectBox();
-        addChild(sp);
+
 
         this.flatten();
     }

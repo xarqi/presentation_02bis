@@ -28,8 +28,8 @@ public class SlideView extends Sprite
 
         for each(var slide:Slide in _slides)
         {
-            slide.x = 192;
-            slide.y = 107;
+            slide.x = 195;
+            slide.y = 109;
             addChild(slide);
             slide.flatten();
         }

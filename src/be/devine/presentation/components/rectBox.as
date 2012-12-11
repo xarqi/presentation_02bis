@@ -18,13 +18,13 @@ public class rectBox extends starling.display.Image
     public function rectBox():void {
 
         var nBox:Sprite = new Sprite();
-        nBox.graphics.beginFill(0xff00ff, 0);
+        nBox.graphics.beginFill(0xF9F9F9, 0.5);
         nBox.graphics.lineStyle(2,0x00aeef);
-        nBox.graphics.drawRect(0,0,806,606);
+        nBox.graphics.drawRect(0,0,804,604);
 
         nBox.graphics.endFill();
 
-        var nBMP_D:BitmapData = new BitmapData(806, 606, true, 0x00000000);
+        var nBMP_D:BitmapData = new BitmapData(804, 604, true, 0x00000000);
         nBMP_D.draw(nBox);
 
         var nTxtr:Texture = Texture.fromBitmapData(nBMP_D, false, false);

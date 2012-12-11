@@ -8,7 +8,7 @@
 package be.devine.presentation
 {
 
-import be.devine.presentation.components.Test;
+
 import be.devine.presentation.components.controls.ButtonNext;
 import be.devine.presentation.components.controls.ButtonPrev;
 import be.devine.presentation.components.Slide;
@@ -20,8 +20,13 @@ import be.devine.presentation.queue.tasks.LoaderTask;
 import be.devine.presentation.vo.SlideVO;
 
 import flash.display.Bitmap;
+import flash.display.Loader;
 import flash.events.Event;
+import flash.net.URLRequest;
 import flash.ui.Keyboard;
+
+import starling.display.Image;
+import starling.textures.Texture;
 
 import starling.display.Sprite;
 import starling.events.Event;
@@ -52,6 +57,9 @@ public class Application extends Sprite
 
         resizeHandler(null);
         stage.addEventListener(starling.events.Event.RESIZE, resizeHandler);
+
+        addView();
+
     }
 
     private function xmlLoadedHandler(event:flash.events.Event):void
@@ -95,16 +103,14 @@ public class Application extends Sprite
             _slides.push(slide);
         }
 
-        var t:Test = new Test();
-        t.x = 100;
-        t.scaleX = t.scaleY = 5;
-        addChild(t);
+
 
         _slideView = new SlideView(_slides);
+
         addChild(_slideView);
 
         _thumbGroup = new ThumbGroup(_slides);
-      //  _thumbGroup.x = 32;
+        //_thumbGroup.x = 32;
         //_thumbGroup.y = 70;
        addChild(_thumbGroup);
 
@@ -146,5 +152,32 @@ public class Application extends Sprite
     private function resizeHandler(event:starling.events.Event):void
     {
     }
+
+    private function addView():void{
+
+
+        //header
+        var loader:Loader = new Loader();
+        loader.load ( new URLRequest ("/assets/other/header.png") );
+        loader.contentLoaderInfo.addEventListener (flash.events.Event.COMPLETE, HeaderComplete );
+    }
+
+    protected function HeaderComplete(event:flash.events.Event):void
+    {
+
+        trace("onComplete");
+
+        var loadedBitmap:Bitmap = event.currentTarget.loader.content as Bitmap;
+
+        var header:Image = new Image(Texture.fromBitmap(loadedBitmap));
+        header.y = 32;
+        header.x = 32;
+        addChild(header);
+
+    }
+
+
+
+
 }
 }

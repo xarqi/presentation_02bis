@@ -17,10 +17,10 @@ import starling.textures.TextureAtlas;
 
 public class ButtonPlay extends Button
 {
-    [Embed(source = '../assets/controls/arrows.xml', mimeType="application/octet-stream")]
+    [Embed(source = '../assets/controls/buttonplay.xml', mimeType="application/octet-stream")]
     public static const ButtonArrowXML:Class;
 
-    [Embed(source = '../assets/controls/arrows.png')]
+    [Embed(source = '../assets/controls/buttonplay.png')]
     public static const ButtonArrowTextures:Class;
 
     private var _appModel:AppModel;
@@ -38,9 +38,9 @@ public class ButtonPlay extends Button
         _xml = XML(new ButtonArrowXML());
         _textureAtlas = new TextureAtlas(_texture, _xml);
 
-        _frames = _textureAtlas.getTextures('arrow');
+        _frames = _textureAtlas.getTextures('buttonPlay');
 
-        super(_frames[2], '', _frames[3]);
+        super(_frames[0], '', _frames[1]);
 
         this.addEventListener(starling.events.TouchEvent.TOUCH, touchHandler);
     }
@@ -49,11 +49,11 @@ public class ButtonPlay extends Button
     {
         if(event.getTouch(this, starling.events.TouchPhase.HOVER))
         {
-            this.upState = _frames[3];
+            this.upState = _frames[1];
         }
         else
         {
-            this.upState = _frames[2];
+            this.upState = _frames[0];
         }
 
         if(event.getTouch(this, starling.events.TouchPhase.ENDED))

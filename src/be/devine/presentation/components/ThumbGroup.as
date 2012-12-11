@@ -10,7 +10,6 @@ package be.devine.presentation.components
 import be.devine.presentation.components.Thumb;
 
 import starling.display.Sprite;
-import be.devine.presentation.components.rectBox;
 import be.devine.presentation.components.controls.ButtonPlay;
 public class ThumbGroup extends starling.display.Sprite
 {
@@ -21,8 +20,7 @@ public class ThumbGroup extends starling.display.Sprite
     public function ThumbGroup(slides:Vector.<Slide>)
     {
         this._arraySlides = slides;
-        var sp:rectBox = new rectBox();
-        addChild(sp);
+
         // this.width=50;
         //this.height=50;
         var i:int = 1;
@@ -40,8 +38,8 @@ public class ThumbGroup extends starling.display.Sprite
     private function createControls():void
     {
         _buttonPlay = new ButtonPlay();
-        //_buttonPlay.x = 934;
-        //_buttonPlay.y = 70;
+        _buttonPlay.x = 52;
+        _buttonPlay.y = 537;
         addChild(_buttonPlay);
 
 

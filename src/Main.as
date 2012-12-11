@@ -18,7 +18,7 @@ public class Main extends Sprite
     {
         stage.scaleMode = StageScaleMode.NO_SCALE;
         stage.align = StageAlign.TOP_LEFT;
-
+        stage.color=0xECECEC;
         stage.nativeWindow.visible = true;
         stage.nativeWindow.width = 1024;
         stage.nativeWindow.height = 786;
