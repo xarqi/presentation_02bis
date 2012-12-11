@@ -8,6 +8,7 @@
 package be.devine.presentation.components
 {
 import be.devine.presentation.components.Thumb;
+import be.devine.presentation.components.controls.ButtonClose;
 
 import starling.display.Sprite;
 import be.devine.presentation.components.controls.ButtonPlay;
@@ -16,6 +17,7 @@ public class ThumbGroup extends starling.display.Sprite
     private var _arraySlides:Vector.<Slide>;
     private var _arrayThumbs:Array;
     private var _buttonPlay:ButtonPlay;
+    private var _buttonClose:ButtonClose;
 
     public function ThumbGroup(slides:Vector.<Slide>)
     {
@@ -41,6 +43,11 @@ public class ThumbGroup extends starling.display.Sprite
         _buttonPlay.x = 52;
         _buttonPlay.y = 537;
         addChild(_buttonPlay);
+
+        _buttonClose = new ButtonClose();
+        _buttonClose.x = 62;
+        _buttonClose.y = 537;
+        addChild(_buttonClose);
 
 
     }

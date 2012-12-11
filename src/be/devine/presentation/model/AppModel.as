@@ -87,6 +87,13 @@ public class AppModel extends flash.events.EventDispatcher
             slideIndex = 1;
         }
     }
+    public function play():void
+    {
+           //Start van presenter view.
+    }
+    public function close():void{
+           //stoppen van presenter view
+    }
 
     public function get slideIndex():int
     {

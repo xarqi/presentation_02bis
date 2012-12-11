@@ -15,12 +15,12 @@ import starling.events.TouchPhase;
 import starling.textures.Texture;
 import starling.textures.TextureAtlas;
 
-public class ButtonPlay extends Button
+public class ButtonClose extends Button
 {
-    [Embed(source = '../assets/controls/buttonplay.xml', mimeType="application/octet-stream")]
+    [Embed(source = '../assets/controls/buttonclose.xml', mimeType="application/octet-stream")]
     public static const ButtonArrowXML:Class;
 
-    [Embed(source = '../assets/controls/buttonplay.png')]
+    [Embed(source = '../assets/controls/buttonclose.png')]
     public static const ButtonArrowTextures:Class;
 
     private var _appModel:AppModel;
@@ -30,7 +30,7 @@ public class ButtonPlay extends Button
     private var _textureAtlas:TextureAtlas;
     private var _frames:Vector.<Texture>;
 
-    public function ButtonPlay()
+    public function ButtonClose()
     {
         this._appModel = AppModel.getInstance();
 
@@ -38,7 +38,7 @@ public class ButtonPlay extends Button
         _xml = XML(new ButtonArrowXML());
         _textureAtlas = new TextureAtlas(_texture, _xml);
 
-        _frames = _textureAtlas.getTextures('buttonPlay');
+        _frames = _textureAtlas.getTextures('buttonClose');
 
         super(_frames[0], '', _frames[1]);
 
@@ -58,7 +58,7 @@ public class ButtonPlay extends Button
 
         if(event.getTouch(this, starling.events.TouchPhase.ENDED))
         {
-            _appModel.play();
+            _appModel.close();
         }
     }
 }
