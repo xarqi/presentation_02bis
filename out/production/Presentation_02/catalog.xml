@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="starling/events/EventDispatcher" mod="1343126853000" signatureChecksum="4253068412" >
+        <def id="starling.events:EventDispatcher" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.display:DisplayObject" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/display/DisplayObject" mod="1345040700000" signatureChecksum="549214586" >
+        <def id="starling.display:DisplayObject" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="flash.ui:MouseCursor" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="starling.events:EnterFrameEvent" type="e" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="starling.display:Stage" type="e" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="flash.system:Capabilities" type="e" /> 
+        <dep id="flash.ui:Mouse" type="e" /> 
+        <dep id="starling.errors:AbstractMethodError" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="starling.events:TouchEvent" type="e" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="s" /> 
+        <dep id="starling.display:Stage" type="s" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="starling.events:TouchEvent" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="starling/display/QuadBatch" mod="1343126853000" signatureChecksum="1115490893" >
+        <def id="starling.display:QuadBatch" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="com.adobe.utils:AGALMiniAssembler" type="e" /> 
+        <dep id="starling.display:Quad" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="flash.display3D:Context3DTextureFormat" type="e" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="flash.display3D:Context3DProgramType" type="e" /> 
+        <dep id="flash.display3D:Context3DVertexBufferFormat" type="e" /> 
+        <dep id="starling.errors:MissingContextError" type="e" /> 
+        <dep id="starling.textures:TextureSmoothing" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="flash.geom:Matrix3D" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="starling.core:RenderSupport" type="e" /> 
+        <dep id="starling.utils:VertexData" type="e" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="s" /> 
+        <dep id="flash.display3D:Context3D" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="com.adobe.utils:AGALMiniAssembler" type="s" /> 
+        <dep id="starling.display:Quad" type="s" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="flash.display3D:IndexBuffer3D" type="s" /> 
+        <dep id="flash.geom:Matrix3D" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="starling.core:Starling" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="flash.display3D:VertexBuffer3D" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObject" type="i" /> 
+      </script>
+      <script name="starling/core/TouchProcessor" mod="1343126853000" signatureChecksum="2916524772" >
+        <def id="starling.core:TouchProcessor" /> 
+        <dep id="starling.events:KeyboardEvent" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="starling.core:TouchMarker" type="e" /> 
+        <dep id="starling.events:Touch" type="e" /> 
+        <dep id="starling.events:TouchEvent" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.events:TouchPhase" type="e" /> 
+        <dep id="starling.events:KeyboardEvent" type="s" /> 
+        <dep id="starling.display:Stage" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="starling.core:TouchMarker" type="s" /> 
+        <dep id="starling.events:Touch" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="mx/core/FlexBitmap" mod="1303837772857" signatureChecksum="1023041752" >
+        <def id="mx.core:FlexBitmap" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="mx.utils:NameUtil" type="e" /> 
+        <dep id="flash.display:BitmapData" type="s" /> 
+        <dep id="Error" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="flash.display:Bitmap" type="i" /> 
+      </script>
+      <script name="mx/core/IFlexAsset" mod="1303837773029" signatureChecksum="3016954274" >
+        <def id="mx.core:IFlexAsset" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="mx/core/ByteArrayAsset" mod="1303837772279" signatureChecksum="2175025507" >
+        <def id="mx.core:ByteArrayAsset" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="mx.core:IFlexAsset" type="i" /> 
+        <dep id="flash.utils:ByteArray" type="i" /> 
+      </script>
+      <script name="starling/text/BitmapFont_MiniXml" mod="1334834642000" signatureChecksum="1494198536" >
+        <def id="starling.text:BitmapFont_MiniXml" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:ByteArrayAsset" type="i" /> 
+      </script>
+      <script name="starling/core/starling_internal" mod="1337872900000" signatureChecksum="3626964846" >
+        <def id="starling.core:starling_internal" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="starling/utils/rad2deg" mod="1323183050000" signatureChecksum="245831705" >
+        <def id="starling.utils:rad2deg" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="Number" type="s" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="starling/core/RenderSupport" mod="1343126853000" signatureChecksum="3272314380" >
+        <def id="starling.core:RenderSupport" /> 
+        <dep id="starling.utils:Color" type="e" /> 
+        <dep id="starling.display:QuadBatch" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="flash.geom:Matrix3D" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="starling.display:QuadBatch" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Matrix3D" type="s" /> 
+        <dep id="starling.display:Quad" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="mx/core/ILayoutDirectionElement" mod="1303837772560" signatureChecksum="559366607" >
+        <def id="mx.core:ILayoutDirectionElement" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/Touch" mod="1343126853000" signatureChecksum="2084982587" >
+        <def id="starling.events:Touch" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="starling.utils:formatString" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/textures/Texture" mod="1343126853000" signatureChecksum="1410664341" >
+        <def id="starling.textures:Texture" /> 
+        <dep id="starling.textures:ConcreteTexture" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="flash.display:BitmapData" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.textures:AtfData" type="e" /> 
+        <dep id="starling.utils:getNextPowerOfTwo" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="flash.display3D:Context3DTextureFormat" type="e" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="starling.errors:MissingContextError" type="e" /> 
+        <dep id="starling.textures:SubTexture" type="e" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="flash.system:Capabilities" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="flash.display3D.textures:Texture" type="s" /> 
+        <dep id="starling.textures:ConcreteTexture" type="s" /> 
+        <dep id="flash.display3D:Context3D" type="s" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="flash.display:BitmapData" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.display3D.textures:TextureBase" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.display:Bitmap" type="s" /> 
+        <dep id="starling.textures:AtfData" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/textures/SubTexture" mod="1343126853000" signatureChecksum="3507415121" >
+        <def id="starling.textures:SubTexture" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.display3D.textures:TextureBase" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.textures:Texture" type="i" /> 
+      </script>
+      <script name="mx/core/IFlexDisplayObject" mod="1303837773201" signatureChecksum="583207665" >
+        <def id="mx.core:IFlexDisplayObject" /> 
+        <dep id="flash.accessibility:AccessibilityProperties" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.display:DisplayObjectContainer" type="s" /> 
+        <dep id="flash.display:DisplayObject" type="s" /> 
+        <dep id="flash.display:LoaderInfo" type="s" /> 
+        <dep id="flash.display:Stage" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="flash.geom:Transform" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:IEventDispatcher" type="i" /> 
+        <dep id="flash.display:IBitmapDrawable" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="mx/core/BitmapAsset" mod="1303837772389" signatureChecksum="251402367" >
+        <def id="mx.core:BitmapAsset" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="flash.system:ApplicationDomain" type="e" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="flash.display:BitmapData" type="s" /> 
+        <dep id="mx.core:IAssetLayoutFeatures" type="s" /> 
+        <dep id="flash.display:DisplayObjectContainer" type="s" /> 
+        <dep id="flash.system:ApplicationDomain" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="mx.core:IFlexAsset" type="i" /> 
+        <dep id="mx.core:FlexBitmap" type="i" /> 
+        <dep id="mx.core:ILayoutDirectionElement" type="i" /> 
+        <dep id="mx.core:IFlexDisplayObject" type="i" /> 
+      </script>
+      <script name="starling/core/TouchMarker_TouchMarkerBmp" mod="1323183050000" signatureChecksum="2869799276" >
+        <def id="starling.core:TouchMarker_TouchMarkerBmp" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:BitmapAsset" type="i" /> 
+      </script>
+      <script name="mx/core/IAssetLayoutFeatures" mod="1303837772451" signatureChecksum="979826888" >
+        <def id="mx.core:IAssetLayoutFeatures" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Matrix3D" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="mx/core/mx_internal" mod="1314174884728" signatureChecksum="642982261" >
+        <def id="mx.core:mx_internal" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="mx/core/IRepeaterClient" mod="1303837771982" signatureChecksum="4267343100" >
+        <def id="mx.core:IRepeaterClient" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/textures/TextureAtlas" mod="1343126853000" signatureChecksum="3897597078" >
+        <def id="starling.textures:TextureAtlas" /> 
+        <dep id="starling.textures:Texture" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="XML" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/textures/RenderTexture" mod="1338126108000" signatureChecksum="1041312367" >
+        <def id="starling.textures:RenderTexture" /> 
+        <dep id="starling.errors:MissingContextError" type="e" /> 
+        <dep id="starling.textures:TextureSmoothing" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="starling.utils:getNextPowerOfTwo" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="starling.core:RenderSupport" type="e" /> 
+        <dep id="flash.display3D:Context3D" type="s" /> 
+        <dep id="flash.display3D.textures:TextureBase" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.textures:Texture" type="i" /> 
+      </script>
+      <script name="starling/utils/VertexData" mod="1343126853000" signatureChecksum="2018942471" >
+        <def id="starling.utils:VertexData" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/text/BitmapFont_MiniTexture" mod="1334833125000" signatureChecksum="111124030" >
+        <def id="starling.text:BitmapFont_MiniTexture" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:BitmapAsset" type="i" /> 
+      </script>
+      <script name="starling/display/DisplayObjectContainer" mod="1344861759000" signatureChecksum="2105007410" >
+        <def id="starling.display:DisplayObjectContainer" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="RangeError" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="flash.system:Capabilities" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="starling.utils:MatrixUtil" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObject" type="i" /> 
+      </script>
+      <script name="starling/display/Button" mod="1343126853000" signatureChecksum="3827344771" >
+        <def id="starling.display:Button" /> 
+        <dep id="starling.utils:HAlign" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="flash.ui:MouseCursor" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="flash.ui:Mouse" type="e" /> 
+        <dep id="starling.text:TextField" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="starling.utils:VAlign" type="e" /> 
+        <dep id="starling.events:TouchEvent" type="e" /> 
+        <dep id="starling.events:TouchPhase" type="e" /> 
+        <dep id="starling.display:Sprite" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="starling.text:TextField" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="starling.events:Touch" type="s" /> 
+        <dep id="starling.events:TouchEvent" type="s" /> 
+        <dep id="starling.display:Sprite" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="i" /> 
+      </script>
+      <script name="starling/display/Quad" mod="1343126853000" signatureChecksum="552206659" >
+        <def id="starling.display:Quad" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.utils:VertexData" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObject" type="i" /> 
+      </script>
+      <script name="starling/utils/formatString" mod="1323183050000" signatureChecksum="369892210" >
+        <def id="starling.utils:formatString" /> 
+        <dep id="RegExp" type="e" /> 
+        <dep id="String" type="s" /> 
+        <dep id="int" type="s" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="starling/animation/IAnimatable" mod="1329723734000" signatureChecksum="721494710" >
+        <def id="starling.animation:IAnimatable" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/Event" mod="1344252488000" signatureChecksum="1565306727" >
+        <def id="starling.events:Event" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="starling.utils:formatString" type="e" /> 
+        <dep id="starling.events:EventDispatcher" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/KeyboardEvent" mod="1343126853000" signatureChecksum="1597407325" >
+        <def id="starling.events:KeyboardEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:Event" type="i" /> 
+      </script>
+      <script name="starling/display/Stage" mod="1343126853000" signatureChecksum="3267449497" >
+        <def id="starling.display:Stage" /> 
+        <dep id="starling.events:KeyboardEvent" type="e" /> 
+        <dep id="flash.errors:IllegalOperationError" type="e" /> 
+        <dep id="starling.events:ResizeEvent" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.events:EnterFrameEvent" type="e" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="starling.events:EnterFrameEvent" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.core:starling_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="i" /> 
+      </script>
+      <script name="starling/animation/Tween" mod="1343374302000" signatureChecksum="3094044980" >
+        <def id="starling.animation:Tween" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="starling.animation:Transitions" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:EventDispatcher" type="i" /> 
+        <dep id="starling.animation:IAnimatable" type="i" /> 
+      </script>
+      <script name="starling/utils/Color" mod="1323183050000" signatureChecksum="3923576010" >
+        <def id="starling.utils:Color" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/animation/DelayedCall" mod="1343126853000" signatureChecksum="474645402" >
+        <def id="starling.animation:DelayedCall" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:EventDispatcher" type="i" /> 
+        <dep id="starling.animation:IAnimatable" type="i" /> 
+      </script>
+      <script name="mx/utils/NameUtil" mod="1303837778779" signatureChecksum="1851228527" >
+        <def id="mx.utils:NameUtil" /> 
+        <dep id="mx.core:IRepeaterClient" type="e" /> 
+        <dep id="SecurityError" type="e" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="SecurityError" type="s" /> 
+        <dep id="flash.display:DisplayObject" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/text/TextField" mod="1343126853000" signatureChecksum="610302538" >
+        <def id="starling.text:TextField" /> 
+        <dep id="starling.utils:HAlign" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="flash.display:BitmapData" type="e" /> 
+        <dep id="starling.display:QuadBatch" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.display:Quad" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="starling.display:Sprite" type="e" /> 
+        <dep id="starling.textures:Texture" type="e" /> 
+        <dep id="flash.text:AntiAliasType" type="e" /> 
+        <dep id="flash.text:TextFormat" type="e" /> 
+        <dep id="flash.text:TextField" type="e" /> 
+        <dep id="flash.geom:Matrix" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="starling.utils:VAlign" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.text:BitmapFont" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="starling.display:QuadBatch" type="s" /> 
+        <dep id="flash.display:BitmapData" type="s" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="starling.display:Quad" type="s" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="flash.text:TextFormat" type="s" /> 
+        <dep id="flash.text:TextField" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="starling.text:BitmapFont" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="i" /> 
+      </script>
+      <script name="starling/utils/transformCoords" mod="1343126853000" signatureChecksum="1120809327" >
+        <def id="starling.utils:transformCoords" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="Number" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="Boolean" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="starling/errors/MissingContextError" mod="1323183050000" signatureChecksum="622602283" >
+        <def id="starling.errors:MissingContextError" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Error" type="i" /> 
+      </script>
+      <script name="starling/events/ResizeEvent" mod="1343126853000" signatureChecksum="2320320321" >
+        <def id="starling.events:ResizeEvent" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:Event" type="i" /> 
+      </script>
+      <script name="starling/text/BitmapFont" mod="1343126853000" signatureChecksum="468991715" >
+        <def id="starling.text:BitmapFont" /> 
+        <dep id="starling.utils:HAlign" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="starling.text:BitmapFont_MiniTexture" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.text:BitmapChar" type="e" /> 
+        <dep id="starling.text:BitmapFont_MiniXml" type="e" /> 
+        <dep id="starling.display:Sprite" type="e" /> 
+        <dep id="starling.textures:Texture" type="e" /> 
+        <dep id="starling.textures:TextureSmoothing" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="XML" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.utils:VAlign" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="starling.display:QuadBatch" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="XML" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="starling.text:BitmapChar" type="s" /> 
+        <dep id="starling.display:Sprite" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/TouchPhase" mod="1334904817000" signatureChecksum="3650510866" >
+        <def id="starling.events:TouchPhase" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/utils/HAlign" mod="1323183050000" signatureChecksum="2478068716" >
+        <def id="starling.utils:HAlign" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/adobe/utils/AGALMiniAssembler" mod="1343126853000" signatureChecksum="2482533053" >
+        <def id="com.adobe.utils:AGALMiniAssembler" /> 
+        <dep id="flash.utils:ByteArray" type="e" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.utils:Endian" type="e" /> 
+        <dep id="flash.utils:getTimer" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="RegExp" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/utils/getNextPowerOfTwo" mod="1343126853000" signatureChecksum="2022775327" >
+        <def id="starling.utils:getNextPowerOfTwo" /> 
+        <dep id="int" type="s" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="starling/display/Sprite" mod="1343126853000" signatureChecksum="270436099" >
+        <def id="starling.display:Sprite" /> 
+        <dep id="starling.display:QuadBatch" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.display:QuadBatch" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="i" /> 
+      </script>
+      <script name="starling/core/StatsDisplay" mod="1343126853000" signatureChecksum="2306314582" >
+        <def id="starling.core:StatsDisplay" /> 
+        <dep id="flash.system:System" type="e" /> 
+        <dep id="starling.utils:HAlign" type="e" /> 
+        <dep id="starling.display:BlendMode" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.text:TextField" type="e" /> 
+        <dep id="starling.display:Quad" type="e" /> 
+        <dep id="starling.utils:VAlign" type="e" /> 
+        <dep id="starling.text:BitmapFont" type="e" /> 
+        <dep id="starling.text:TextField" type="s" /> 
+        <dep id="starling.events:EnterFrameEvent" type="s" /> 
+        <dep id="starling.display:Quad" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:Sprite" type="i" /> 
+      </script>
+      <script name="starling/core/Starling" mod="1345040204000" signatureChecksum="371027706" >
+        <def id="starling.core:Starling" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="flash.events:TouchEvent" type="e" /> 
+        <dep id="flash.events:KeyboardEvent" type="e" /> 
+        <dep id="starling.core:TouchProcessor" type="e" /> 
+        <dep id="starling.animation:Juggler" type="e" /> 
+        <dep id="starling.events:KeyboardEvent" type="e" /> 
+        <dep id="starling.display:Stage" type="e" /> 
+        <dep id="flash.text:TextFormat" type="e" /> 
+        <dep id="starling.events:ResizeEvent" type="e" /> 
+        <dep id="flash.text:TextFormatAlign" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.events:TouchPhase" type="e" /> 
+        <dep id="flash.events:ErrorEvent" type="e" /> 
+        <dep id="starling.core:RenderSupport" type="e" /> 
+        <dep id="flash.display:Sprite" type="e" /> 
+        <dep id="flash.text:TextFieldAutoSize" type="e" /> 
+        <dep id="starling.utils:HAlign" type="e" /> 
+        <dep id="flash.errors:IllegalOperationError" type="e" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.geom:Rectangle" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="flash.utils:getTimer" type="e" /> 
+        <dep id="flash.display3D:Program3D" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="flash.utils:setTimeout" type="e" /> 
+        <dep id="flash.ui:MultitouchInputMode" type="e" /> 
+        <dep id="flash.events:MouseEvent" type="e" /> 
+        <dep id="flash.text:TextField" type="e" /> 
+        <dep id="flash.ui:Multitouch" type="e" /> 
+        <dep id="starling.core:StatsDisplay" type="e" /> 
+        <dep id="flash.ui:Mouse" type="e" /> 
+        <dep id="flash.display:Stage" type="e" /> 
+        <dep id="starling.utils:VAlign" type="e" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="flash.events:TouchEvent" type="s" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="flash.display3D:Context3D" type="s" /> 
+        <dep id="flash.events:KeyboardEvent" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.display:Stage3D" type="s" /> 
+        <dep id="starling.core:TouchProcessor" type="s" /> 
+        <dep id="flash.display3D:Program3D" type="s" /> 
+        <dep id="starling.animation:Juggler" type="s" /> 
+        <dep id="Error" type="s" /> 
+        <dep id="starling.display:Stage" type="s" /> 
+        <dep id="flash.events:MouseEvent" type="s" /> 
+        <dep id="flash.text:TextFormat" type="s" /> 
+        <dep id="flash.text:TextField" type="s" /> 
+        <dep id="starling.core:StatsDisplay" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="flash.display:Stage" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="flash.display:Sprite" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="flash.events:ErrorEvent" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="starling/textures/ConcreteTexture" mod="1343126853000" signatureChecksum="3261071750" >
+        <def id="starling.textures:ConcreteTexture" /> 
+        <dep id="flash.display3D:Context3DTextureFormat" type="e" /> 
+        <dep id="flash.display:BitmapData" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.textures:AtfData" type="e" /> 
+        <dep id="starling.core:Starling" type="e" /> 
+        <dep id="flash.display3D.textures:Texture" type="s" /> 
+        <dep id="flash.display:BitmapData" type="s" /> 
+        <dep id="flash.display3D:Context3D" type="s" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="flash.display3D.textures:TextureBase" type="s" /> 
+        <dep id="starling.textures:AtfData" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.textures:Texture" type="i" /> 
+      </script>
+      <script name="starling/textures/AtfData" mod="1343126853000" signatureChecksum="1252744514" >
+        <def id="starling.textures:AtfData" /> 
+        <dep id="flash.display3D:Context3DTextureFormat" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/EnterFrameEvent" mod="1343126853000" signatureChecksum="3302375620" >
+        <def id="starling.events:EnterFrameEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:Event" type="i" /> 
+      </script>
+      <script name="starling/textures/TextureSmoothing" mod="1323183050000" signatureChecksum="361258423" >
+        <def id="starling.textures:TextureSmoothing" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/errors/AbstractClassError" mod="1323183050000" signatureChecksum="3251119873" >
+        <def id="starling.errors:AbstractClassError" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Error" type="i" /> 
+      </script>
+      <script name="starling/utils/VAlign" mod="1323183050000" signatureChecksum="2753123367" >
+        <def id="starling.utils:VAlign" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/display/BlendMode" mod="1334232873000" signatureChecksum="3247024199" >
+        <def id="starling.display:BlendMode" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="flash.display3D:Context3DBlendFactor" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/display/Image" mod="1343126853000" signatureChecksum="3809604938" >
+        <def id="starling.display:Image" /> 
+        <dep id="starling.textures:Texture" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="starling.textures:TextureSmoothing" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.utils:VertexData" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="flash.geom:Rectangle" type="s" /> 
+        <dep id="flash.display:Bitmap" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="starling.utils:VertexData" type="s" /> 
+        <dep id="starling.core:RenderSupport" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:Quad" type="i" /> 
+      </script>
+      <script name="starling/utils/deg2rad" mod="1323183050000" signatureChecksum="243996697" >
+        <def id="starling.utils:deg2rad" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="Number" type="s" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="_fc0f336883b55031dd96203b058c8b9b25ebf9f1a040dc3f6ca78e48e6a94308_flash_display_Sprite" mod="1345111460360" signatureChecksum="1234860603" >
+        <def id="_fc0f336883b55031dd96203b058c8b9b25ebf9f1a040dc3f6ca78e48e6a94308_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="starling/display/MovieClip" mod="1344860609000" signatureChecksum="1497459511" >
+        <def id="starling.display:MovieClip" /> 
+        <dep id="flash.errors:IllegalOperationError" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="e" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="flash.media:Sound" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="flash.media:Sound" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.animation:IAnimatable" type="i" /> 
+        <dep id="starling.display:Image" type="i" /> 
+      </script>
+      <script name="starling/errors/AbstractMethodError" mod="1323183050000" signatureChecksum="406988759" >
+        <def id="starling.errors:AbstractMethodError" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Error" type="i" /> 
+      </script>
+      <script name="starling/core/TouchMarker" mod="1337872900000" signatureChecksum="1915521973" >
+        <def id="starling.core:TouchMarker" /> 
+        <dep id="starling.textures:Texture" type="e" /> 
+        <dep id="starling.core:TouchMarker_TouchMarkerBmp" type="e" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.display:Sprite" type="i" /> 
+      </script>
+      <script name="starling/animation/Juggler" mod="1344862370000" signatureChecksum="1072857853" >
+        <def id="starling.animation:Juggler" /> 
+        <dep id="starling.events:Event" type="e" /> 
+        <dep id="starling.events:EventDispatcher" type="e" /> 
+        <dep id="starling.animation:DelayedCall" type="e" /> 
+        <dep id="starling.animation:Tween" type="e" /> 
+        <dep id="starling.events:Event" type="s" /> 
+        <dep id="starling.events:EventDispatcher" type="s" /> 
+        <dep id="starling.animation:DelayedCall" type="s" /> 
+        <dep id="starling.animation:Tween" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.animation:IAnimatable" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/text/BitmapChar" mod="1334411230000" signatureChecksum="3529940330" >
+        <def id="starling.text:BitmapChar" /> 
+        <dep id="starling.display:Image" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="starling.textures:Texture" type="s" /> 
+        <dep id="starling.display:Image" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/animation/Transitions" mod="1337872900000" signatureChecksum="2603561147" >
+        <def id="starling.animation:Transitions" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/utils/MatrixUtil" mod="1345040204000" signatureChecksum="2794895323" >
+        <def id="starling.utils:MatrixUtil" /> 
+        <dep id="starling.errors:AbstractClassError" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="flash.geom:Matrix3D" type="e" /> 
+        <dep id="flash.geom:Point" type="e" /> 
+        <dep id="flash.geom:Matrix" type="s" /> 
+        <dep id="flash.geom:Matrix3D" type="s" /> 
+        <dep id="flash.geom:Point" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="starling/events/TouchEvent" mod="1343126853000" signatureChecksum="1015460962" >
+        <def id="starling.events:TouchEvent" /> 
+        <dep id="starling.display:DisplayObjectContainer" type="e" /> 
+        <dep id="starling.events:Touch" type="e" /> 
+        <dep id="starling.events:TouchPhase" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="starling.display:DisplayObject" type="s" /> 
+        <dep id="starling.events:Touch" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="starling.events:Event" type="i" /> 
+      </script>
+      <keep-as3-metadata>
+        <metadata name="Transient" />
+        <metadata name="Bindable" />
+        <metadata name="ChangeEvent" />
+        <metadata name="Managed" />
+        <metadata name="NonCommittingChangeEvent" />
+      </keep-as3-metadata>
+      <digests>
+        <digest type="SHA-256" signed="false" value="b4342889e509edca569a9e6e820db4f2d3353bac84b1e85f701600c896bec0cb"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

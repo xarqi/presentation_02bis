@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding ="utf-8"?>
+
+<slides>
+    <slide>
+        <id>1</id>
+        <title>
+            <font>arial</font>
+            <color>0xFFFFFF</color>
+            <style>bold</style>
+            <size>12</size>
+            <textTransform>uppercase</textTransform>
+            <x>50</x>
+            <y>200</y>
+            <align>left</align>
+            <value>titel 1</value>
+        </title>
+        <image>
+            <path>assets/images/1.jpg</path>
+            <x>400</x>
+            <y>300</y>
+            <width>1200</width>
+            <height>600</height>
+            <alpha>1</alpha>
+            <isColor>true</isColor>
+            <border>
+                <thickness>3</thickness>
+                <color>0xFFFFFF</color>
+                <alpha>1</alpha>
+            </border>
+        </image>
+        <transitions>
+            <transitionId>1</transitionId>
+            <transitionTime>2</transitionTime>
+        </transitions>
+    </slide>
+
+    <slide>
+        <id>2</id>
+        <title>
+            <font>arial</font>
+            <color>0xFFFFFF</color>
+            <style>bold</style>
+            <size>12</size>
+            <textTransform>uppercase</textTransform>
+            <x>50</x>
+            <y>200</y>
+            <align>left</align>
+            <value>titel 2</value>
+        </title>
+        <list>
+            <bullet>
+                <color>0xFFFFFF</color>
+                <type>square</type>
+            </bullet>
+            <items>
+                <item>item 1</item>
+                <item>item 2</item>
+                <item>item 3</item>
+                <item>item 4</item>
+            </items>
+            <font>arial</font>
+            <color>0xFFFFFF</color>
+            <style>bold</style>
+            <size>12</size>
+            <textTransform>lowercase</textTransform>
+            <x>100</x>
+            <y>200</y>
+        </list>
+        <transitions>
+            <transitionId>1</transitionId>
+            <transitionTime>2</transitionTime>
+        </transitions>
+    </slide>
+
+    <slide>
+        <id>3</id>
+        <title>
+            <font>arial</font>
+            <color>0xFFFFFF</color>
+            <style>bold</style>
+            <size>12</size>
+            <textTransform>uppercase</textTransform>
+            <x>50</x>
+            <y>200</y>
+            <align>left</align>
+            <value>titel 3</value>
+        </title>
+        <image>
+            <path>assets/images/3.jpg</path>
+            <x>400</x>
+            <y>300</y>
+            <width>1200</width>
+            <height>600</height>
+            <alpha>1</alpha>
+            <isColor>true</isColor>
+            <border>
+                <thickness>3</thickness>
+                <color>0xFFFFFF</color>
+                <alpha>1</alpha>
+            </border>
+        </image>
+        <transitions>
+            <transitionId>1</transitionId>
+            <transitionTime>2</transitionTime>
+        </transitions>
+    </slide>
+	<slide>
+        <id>4</id>
+        <title>
+            <font>arial</font>
+            <color>0xFFFFFF</color>
+            <style>bold</style>
+            <size>12</size>
+            <textTransform>lowercase</textTransform>
+            <x>100</x>
+            <y>100</y>
+            <align>left</align>
+            <value>Titel 4</value>
+        </title>
+        <image>
+            <path>assets/images/3.jpg</path>
+            <x>400</x>
+            <y>300</y>
+            <width>1200</width>
+            <height>600</height>
+            <alpha>1</alpha>
+            <isColor>true</isColor>
+            <border>
+                <thickness>3</thickness>
+                <color>0xFFFFFF</color>
+                <alpha>1</alpha>
+            </border>
+        </image>
+        <transitions>
+            <transitionId>1</transitionId>
+            <transitionTime>2</transitionTime>
+        </transitions>
+    </slide>
+</slides>
+
+
